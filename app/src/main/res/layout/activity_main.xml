@@ -8,23 +8,6 @@
     tools:context=".MainActivity" >
 
     <EditText
-        android:id="@+id/playerOneTime"
-        android:layout_width="328dp"
-        android:layout_height="158dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="28dp"
-        android:ems="10"
-        android:inputType="number"
-        android:text="10:00"
-        android:textColor="@color/Beige"
-        android:textSize="126dp"
-        app:layout_constraintBottom_toTopOf="@+id/playerOneButton"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.492"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <EditText
         android:id="@+id/playerTwoTime"
         android:layout_width="328dp"
         android:layout_height="158dp"
@@ -73,12 +56,26 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
         android:text="+15 s"
-        app:layout_constraintBottom_toTopOf="@+id/playerOneTime"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.889"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/playerTwoTime"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintTop_toBottomOf="@+id/playerTwoTime" />
+
+    <Chronometer
+        android:id="@+id/chono_one"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="84dp"
+        android:text="10:00"
+        android:textColor="@color/Beige"
+        app:layout_constraintBottom_toTopOf="@+id/playerOneButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+
 </android.support.constraint.ConstraintLayout>
