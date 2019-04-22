@@ -6,7 +6,7 @@ import kotlinx.android.synthetic.main.activity_main.*
 
 class ClockActivity : AppCompatActivity(), ClockPresenter.ClockPresenterView {
 
-    val presenter by lazy { ClockPresenter(this) }
+    private val presenter by lazy { ClockPresenter(this) }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
