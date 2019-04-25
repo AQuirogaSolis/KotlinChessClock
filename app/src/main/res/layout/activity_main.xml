@@ -5,38 +5,36 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/bg"
-    tools:context=".MainActivity" >
+    tools:context=".ClockActivity" >
 
-    <EditText
-        android:id="@+id/playerOneTime"
+    <Chronometer
+        android:id="@+id/playerOneChrono"
         android:layout_width="328dp"
         android:layout_height="158dp"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="28dp"
-        android:ems="10"
-        android:inputType="number"
-        android:text="10:00"
+        android:gravity="center"
+        android:countDown="true"
         android:textColor="@color/Beige"
-        android:textSize="126dp"
+        android:textSize="90sp"
         app:layout_constraintBottom_toTopOf="@+id/playerOneButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <EditText
-        android:id="@+id/playerTwoTime"
+    <Chronometer
+        android:id="@+id/playerTwoChrono"
         android:layout_width="328dp"
         android:layout_height="158dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="8dp"
-        android:ems="10"
-        android:inputType="number"
+        android:gravity="center"
+        android:countDown="true"
         android:rotation="180"
-        android:text="10:00"
         android:textColor="@color/Beige"
-        android:textSize="126dp"
+        android:textSize="90sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
