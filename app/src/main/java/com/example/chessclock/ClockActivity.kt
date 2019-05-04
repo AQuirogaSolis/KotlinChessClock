@@ -1,6 +1,7 @@
 package com.example.chessclock
 
 import android.os.Bundle
+import android.os.SystemClock
 import android.support.v7.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
@@ -14,6 +15,8 @@ class ClockActivity : AppCompatActivity(), ClockPresenter.ClockPresenterView {
 
         playerOneChrono.setOnClickListener { presenter.onChrono1Tap() }
         playerTwoChrono.setOnClickListener { presenter.onChrono2Tap() }
+        playerOneChrono.base = SystemClock.elapsedRealtime() + (2* 60000 + 0 * 1000)
+        playerTwoChrono.base = SystemClock.elapsedRealtime() + (2* 60000 + 0 * 1000)
     }
 
     override fun stopChrono1() {
